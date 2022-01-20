@@ -5,6 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: 'Sigmar One', cursive;
 }
@@ -22,4 +23,16 @@ body {
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+ul {
+  list-style: none;
+  width: 50%;
+}
+
+.tasks-item {
+  border: 1px solid #d3d3d30f;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 5px;
 }
