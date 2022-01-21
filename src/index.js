@@ -9,16 +9,25 @@ function Task(props){
 	//console.log(props);
 	return(
 		<li className="tasks-item">{props.taskName}</li> //
-
 		);
 	}
+
 function TaskList(){
+	const taskItemsList = [
+	"Sleep",
+	"Feed Cat",
+	"Procrastinate",
+	"Watch Netflix"
+	];
 	return(
+		<div>
+		<input className="task-input"/>
 		<ul>
-  		<Task taskName="Sleep"/>
-  		<Task taskName="Feed Cat"/>
-  		<Task taskName="Procrastinate"/>
+  		{taskItemsList.map((task,index) =>{
+  			return <Task key={index} taskName={task}/>
+  			})}
   	    </ul>
+  	    </div>
 		);
 }
 //
